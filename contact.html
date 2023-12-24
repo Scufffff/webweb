@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socify - Contact Us</title>
+    <style>
+        body {
+            background-color: #2c3e50; /* Dark Blue Background */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #ecf0f1; /* Light Gray Text Color */
+        }
+
+        header {
+            background-color: #e74c3c; /* Red Header */
+            color: #ffffff;
+            text-align: center;
+            padding: 10px; /* Smaller Header Bar */
+        }
+
+        nav {
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ecf0f1;
+            padding: 10px;
+            margin: 0 10px;
+            border-radius: 5px;
+            background-color: #3498db; /* Blue Navigation Background */
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+        }
+
+        .left-content,
+        .right-content {
+            text-align: center;
+        }
+
+        .moving-images {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .moving-images img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 10px;
+            animation: moveImages 2s infinite linear;
+        }
+
+        @keyframes moveImages {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+
+        footer {
+            background-color: #34495e; /* Dark Blue Footer */
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2em; /* Larger Font Size */
+        }
+
+        p {
+            font-size: 1.2em; /* Larger Font Size */
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            background-color: #e74c3c; /* Red Button */
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Socify</h1>
+        <p>Your Gateway to Online Success</p>
+    </header>
+
+    <nav>
+        <a href="homepage.html">Home</a>
+        <a href="servces.html">Services</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section>
+        <div class="left-content">
+            <h2>Contact Us</h2>
+            <p>Have questions, feedback, or just want to connect? Socify is here for you. Feel free to reach out by clicking the button below, and we'll respond to your email as quickly as possible.</p>
+
+            <p>At Socify, we value your input and strive to provide excellent customer service. Whether you're a current client or interested in our services, we're excited to hear from you.</p>
+
+            <p>If you prefer traditional communication, you can also reach us by phone at [44+ 07888904023]. Our dedicated team is ready to assist you with any inquiries you may have.</p>
+
+            <button onclick="openEmailDraft()">Send Email</button>
+
+            <script>
+                function openEmailDraft() {
+                    window.location.href = 'mailto:zachebakerr@gmail.com';
+                }
+            </script>
+        </div>
+
+        <div class="right-content">
+            <!-- You can add an image or any other content for the right side if needed -->
+        </div>
+    </section>
+
+    <div class="moving-images">
+        <img src="businessman-and-a-pile-of-coins-picture-id1180889771-951x634.jpg.optimal.jpg" alt="Image 1">
+        <img src="localbusiness.jpg" alt="Image 2">
+        <img src="wealth.jpg" alt="Image 3">
+        <!-- Add more image sources as needed -->
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Socify - All rights reserved</p>
+    </footer>
+
+</body>
+</html>
